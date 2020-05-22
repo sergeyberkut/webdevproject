@@ -1,0 +1,87 @@
+// BUTTON BG (CIRCLE)
+.menu-btn
+	display: block
+	width: 50px
+	height: 50px
+	background-color: #fff
+	border-radius: 50%
+	position: relative
+	z-index: 20
+// BUTTON LINES (HAMBURGER-MENU)
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after 
+	transition: 0.2s
+	position: absolute
+	top: 50%
+	margin-top: -1px
+	left: 50%
+	margin-left: -10px
+	width: 20px
+	height: 2px
+	background-color: #222
+.menu-btn span::before,
+.menu-btn span::after 
+	content: ''
+	display: block
+.menu-btn span::before 
+	transform: translateY(-5px)
+.menu-btn span::after 
+	transform: translateY(5px)
+// BUTTON LINES ANIMATION (HAMBURGER-MENU)
+.menu-btn_active span
+	height: 0
+.menu-btn_active span:before 
+	transform: rotate(-45deg)
+.menu-btn_active span:after 
+	transform: rotate(45deg)
+// BUTTON AND MENU STYLES
+.menu-block 
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+// LINKS STYLES 
+.menu-nav a 
+	font-size: 1.5rem
+	text-decoration: none
+	text-transform: uppercase
+	font-weight: 400
+	display: block
+	margin-right: 20px
+	transition: .5s
+	margin: 0
+	color: #fff
+	line-height: 22px
+	&:hover
+		margin-left: 5px
+// STYLES FOR UL
+.menu-nav
+	width: 150px
+	position: absolute
+	top: 50%
+	right: 100%
+	list-style-type: none
+	transition: 0.2s
+	transform: scaleX(0) translateX(0%)
+	transform-origin: center
+	
+	opacity: 0
+	visibility: hidden
+	background-color: #fff
+	padding-right: 25px
+	padding-left: 25px
+	margin-right: -25px
+	border-radius: 10px
+	& li
+		width: 100%
+		padding: 15px 0
+		padding-right: 5px
+// STYLES FOR UL ACTIVE
+.menu-nav_active 
+	z-index: 10
+	transform: scaleX(1) translateX(0%)
+	opacity: 1
+	visibility: visible
+	background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9))
+	

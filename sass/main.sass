@@ -1,0 +1,609 @@
+@import collapse_menu
+@import slider_service
+@import team_slider
+@import pricing_slider
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400,700&display=swap')
+$font: 'Open Sans', sans-serif
+
+section
+	padding: 12.5rem 0
+html
+	font-size: 10px
+	font-family: $font
+.header
+	background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url('../img/header-bg.jpg') no-repeat center center
+	background-size: cover
+	&__menu
+		margin-bottom: 18rem
+		color: #212121
+		height: 12.3rem
+		background: #fff
+		line-height: 22px
+		&-logo
+			font-weight: 600
+			font-size: 2.5rem
+			margin-top: -1rem
+		&-nav
+			line-height: 20px
+			font-size: 2rem
+			letter-spacing: 1px
+			display: flex
+			list-style-type: none
+			& li
+				& a
+					color: #212121
+					&:hover
+						text-decoration: none
+	&__content
+		color: #fff
+		&-title
+			font-size: 6rem
+			font-weight: 400
+			letter-spacing: 3px
+			z-index: 10
+		&-subtitle
+			letter-spacing: 1px
+			font-size: 2.2rem
+		&__btns
+			&-btn
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 22rem
+				margin-top: 10rem
+				font-size: 2.2rem
+				line-height: 22px
+				text-transform: uppercase
+				& a
+					padding: 2rem 3rem
+					display: block
+					color: #fff
+					&:hover
+						text-decoration: none
+				&.btn-our
+					outline: 2px solid white
+				&.btn-hireis
+					background-color: #00897b
+		&-arrow
+			margin: 11rem 0 20rem
+			color: #fff
+			font-size: 5rem
+			&:hover
+				color: #fff
+@media (min-width: 767.98px)
+	.hamburger-menu-wrap
+		display: none
+@media (max-width: 767.98px)
+	html
+		font-size: 5px
+	.header
+		&__menu
+			margin-bottom: 10rem
+			&-logo
+				font-size: 4rem
+			&-nav
+				display: none
+		&__content
+			&-title
+				letter-spacing: 0
+			&-subtitle
+				letter-spacing: 0
+				margin-top: 2rem
+				font-size: 2.5rem
+			&__btns
+				&-btn
+					width: 30rem
+					line-height: 32px
+					font-size: 3rem
+					margin-top: 7rem
+
+			&-arrow
+	.hamburger-menu-wrap
+		// margin-bottom: 5.5rem
+		z-index: 5
+		display: flex
+		justify-content: flex-end
+		& .menu-nav li a
+			font-size: 3rem
+@media (min-width: 767.98px) and (max-width: 991.98px)
+	html
+		font-size: 8px
+	.header__menu-logo
+		margin-bottom: 2rem
+		text-align: center
+
+
+.section-title
+	color: #212121
+	font-size: 3rem
+	font-weight: 700
+	letter-spacing: 1.5px
+	margin-bottom: 3.5rem
+.section-subtitle
+	color: #212121
+	font-size: 1.5rem
+	letter-spacing: 0.75px
+	margin-bottom: 12rem
+@media (min-width: 0px)
+	.section-title
+		font-size: 5rem
+	.section-subtitle
+		font-size: 3rem
+@media (min-width: 767.98px)
+	.section-title
+		font-size: 3rem
+	.section-subtitle
+		font-size: 2rem
+.about
+	&__card
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 7rem
+		text-align: center
+		&-icon
+		&-title
+			font-weight: 600
+			font-size: 2rem
+			letter-spacing: 1px
+			margin: 2rem 0 1.5rem
+		&-subtitle
+			text-align: center
+			font-size: 1.5rem
+			letter-spacing: 0.75px
+@media (max-width: 767.98px)
+	.about
+		&__card
+			&-title
+				font-size: 4rem
+			&-subtitle
+				font-size: 3rem
+@media (min-width: 767.98px) and (max-width: 991.98px)
+	.about
+		&__card
+			&-title
+				font-size: 3rem 
+			&-subtitle
+				font-size: 1.75rem
+@media (min-width: 991.98px) and (max-width: 1199.98px)
+	html
+		font-size: 9px
+	.about
+		&__card
+			&-title
+				font-size: 2.5rem
+.our-services
+	background-color: #e4fdf9
+	&__card
+		background: #fff
+		padding: 5rem 4rem
+		transition: .5s
+		margin-bottom: 3rem
+		height: 40rem
+		&-icon
+			font-size: 4rem
+		&-title
+			font-weight: 700
+			margin: 3.5rem 0 2rem
+			font-size: 2rem
+			letter-spacing: 1px
+		&-subtitle
+			font-weight: 400
+			font-size: 1.5rem
+			line-height: 25px
+			margin-bottom: 4rem
+		&-href
+			text-transform: uppercase
+			font-size: 2rem
+			letter-spacing: 1px
+			padding: 1rem 1.4rem
+			outline: 2px solid #000
+			color: #000
+			transition: .5s
+			font-weight: 600
+			&:hover
+				text-decoration: none
+				color: #fff
+				outline: 2px solid #fff
+		&:hover
+			background-color: #00897b
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35)
+			color: #fff
+@media (min-width: 767.98px)
+	.slider__services
+		display: none
+@media (max-width: 767.98px)
+	.withourslider
+		display: none
+	.our-services
+		&__card
+			height: 70rem
+			&-icon
+				font-size: 5rem
+			&-title
+				font-size: 5rem
+			&-subtitle
+				font-size: 2.5rem
+			&-href
+				font-size: 3rem
+				display: inline-block
+				margin-bottom: 2rem
+@media (min-width: 767.98px) and (max-width: 991.98px)
+	.our-services
+		&__card
+			height: 45rem
+			&-icon
+				font-size: 4rem
+			&-title
+				font-size: 3rem
+			&-subtitle
+				font-size: 2rem
+			&-href
+				font-size: 2rem
+@media (min-width: 991.98px) and (max-width: 1199.98px)
+	.our-services__card
+		height: 45rem
+		&-title
+			font-size: 2.5rem
+
+
+.latest-works
+	&-mobile
+		font-size: 3rem
+	&__btns
+		margin-bottom: 11.5rem
+		&-btn
+			font-size: 2rem
+			text-transform: uppercase
+			border: 2px solid #00897b
+			padding: 1rem 2rem 
+			color: #000
+			letter-spacing: 1px
+			font-weight: 600
+			transition: .5s
+			display: inline-block
+			margin-top: 1rem
+			&:hover
+				text-decoration: none 
+				color: #fff
+				background-color: #00897b
+			&.active
+				text-decoration: none 
+				color: #fff
+				background-color: #00897b
+		&-btn:not(:last-child)
+			margin-right: 2rem
+	&-photo
+		width: 100%
+		height: 30rem
+		position: relative
+		margin-bottom: 3rem
+		&-img
+			width: 100%
+			height: 100%
+	&__viewall
+		margin-top: 10rem
+		&-btn
+			font-size: 2rem
+			padding: 2rem 6.3rem
+			text-transform: uppercase
+			background-color: #00897b
+			color: #fff
+			&:hover
+				text-decoration: none
+				color: #fff
+@media (max-width: 767.98px)
+	.latest-works
+		&__btns
+			&-btn
+				font-size: 2.8rem
+				&:last-child
+					display: inline-block
+					margin-top: 3rem
+					line-height: 20px
+		&-photo
+			height: 50rem
+		&__viewall
+			&-btn
+				font-size: 3rem
+@media (min-width: 767.98px) and(max-width: 991.98px)
+	.latest-works
+		&__btns
+			&-btn
+				font-size: 3rem
+
+.pricing
+	background-color: #f0f0f0
+	&__card
+		background: #fff
+		text-align: center
+		transition: .5s
+		&-upperblock
+			background: url('../img/rec.png') no-repeat top center
+			background-size: cover
+			height: 20rem
+			color: #fff
+			padding: 5rem 0 6rem
+			letter-spacing: 1.25px
+			margin-bottom: 5rem
+			&-title
+				font-size: 2.5rem
+			&-price
+				font-size: 1.7rem
+				& span
+					font-size: 5rem
+		&-downerblock
+			display: flex
+			flex-direction: column
+			align-items: center
+			& ul
+				padding: 0
+				list-style-type: none
+				font-size: 1.7rem
+				width: 16rem
+				& li
+					letter-spacing: .5px
+					padding-bottom: 0.5rem
+					border-bottom: 1px solid gray
+					margin-bottom: 2.5rem
+			&-btn
+				padding: 1rem 2rem
+				outline: 1px solid #000
+				text-transform: uppercase
+				font-size: 2rem
+				margin: 2rem 0 6rem 
+				color: #000
+				transition: .5s
+				&:hover
+					color: #fff
+					text-decoration: none
+					outline: none
+					background: #000
+					background-color: #00897b
+		&:hover
+			box-shadow: 0 3px 25px rgba(0, 0, 0, 0.35)
+@media (max-width: 767.98px)
+	.pricing
+		&__card
+			margin-bottom: 5rem
+			&-upperblock
+				padding-top: 4rem
+				height: 27rem
+				&-title
+					font-size: 4rem
+				&-price
+					font-size: 3rem
+			&-downerblock
+				& ul
+					width: 60%
+					font-size: 3rem				
+				&-btn
+					font-size: 3.5rem
+@media (min-width: 767.98px) and (max-width: 991.98px)
+	.pricing
+		&__card
+			margin-bottom: 3rem
+			&-upperblock
+				height: 23.3rem
+				&-title
+					font-size: 3.5rem
+				&-price
+					font-size: 2rem
+			&-downerblock
+				& ul
+					width: 20rem
+					font-size: 2rem
+				&-btn
+					font-size: 2.7rem
+.team
+	&-photo
+		height: 30rem
+		margin-bottom: 2rem
+	&-avatar
+		width: 100%
+		height: 100%
+		border-radius: 15px
+	&-name
+		font-size: 2rem
+		letter-spacing: 1px
+	&-subtitle
+		font-size: 1.5rem
+		letter-spacing: 0.75px
+		margin: 0.75rem 0 2rem
+	&-icons
+		display: flex
+		justify-content: space-between
+		width: 70%
+		& a
+			background-color: #f0f1f1
+			padding: 1rem
+			color: #00897b
+			font-size: 3rem
+			border-radius: 10px
+			transition: .5s
+			&:hover
+				text-decoration: none
+				color: #fff
+				background-color: #3949ab
+			& i
+				display: block
+@media (max-width: 767.98px)
+	.team
+		&-photo
+			height: 50rem
+		&-name
+			font-size: 4rem
+		&-subtitle
+			font-size: 3rem
+		&-icons
+			width: 90%
+			margin-bottom: 4rem
+			& a
+				font-size: 7rem
+				&:hover
+				& i
+@media (min-width: 767.98px) and (max-width: 991.98px)
+	.team
+		&-photo
+		&-name
+			font-size: 3rem
+		&-subtitle
+			font-size: 2rem
+		&-icons
+			margin-bottom: 3rem
+			& a
+				&:hover
+				& i
+@media (min-width: 991.98px) and (max-width: 1199.98px)
+	.team
+		&-name
+			font-size: 2.5rem
+
+.blog
+	background-color: #e4fdf9
+	&-photo
+		width: 100%
+	&__article
+		color: #212121
+		&-title
+			margin-top: 6rem
+			font-size: 2.5rem
+			letter-spacing: 1.25px
+		&__meta
+			display: flex
+			font-size: 1.7rem
+			margin: 1.5rem 0
+			&-date
+				& i
+					margin-right: .5rem
+			&-departament
+				margin-left: 2rem
+				& i
+					margin-right: 0.5rem
+		&-text
+			font-size: 1.5rem
+			color: #000
+			width: 70%
+@media (max-width: 767.98px)
+	.blog
+		&-photo
+			display: none
+		&__article
+			&-title
+				font-size: 5rem
+			&__meta
+				font-size: 3rem
+				&-date
+					& i
+				&-departament
+					& i
+			&-text
+				width: 100%
+				font-size: 3rem
+@media (min-width: 767.98px) and (max-width: 991.98px)
+	.blog
+		&-photo
+		&__article
+			&-title
+				font-size: 3rem
+				margin-top: 2.5rem
+			&__meta
+				&-date
+					& i
+				&-departament
+					& i
+			&-text
+				width: 80%
+.contact
+	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0.7)),url('../img/muzh.jpg')
+	background-size: cover
+	color: #fff
+	&-icon
+		margin-bottom: 3rem
+		& i
+			font-size: 7rem
+			background-color: #3949ab
+			padding: 2rem
+			border-radius: 50%
+		&-subtitle
+			font-size: 2rem
+			width: 80%
+	&-input
+		color: #212121
+		font-size: 2rem
+		border: none
+		border-radius: 10px
+		width: 100%
+		padding: 2rem
+		letter-spacing: 1px
+	&-area
+		width: 100%
+		height: 30rem
+		padding: 0
+		border: none
+		border-radius: 10px
+		padding: 2rem
+		font-size: 2rem
+		letter-spacing: 1px
+	&-btn-wrap
+		margin-top: 4.5rem
+	&-btn-send
+		font-size: 2rem
+		letter-spacing: 1px
+		font-weight: 600
+		padding: 2rem 9rem
+		background: #fff
+		color: #000
+		border-radius: 10px
+		text-transform: uppercase
+		&:hover
+			text-decoration: none
+			color: #000
+@media (max-width: 767.98px)
+	.contact
+		&-icon
+			& i
+				font-size: 10rem
+			&-subtitle
+				font-size: 2.5rem
+				margin-bottom: 3rem
+		&-input
+			margin-top: 4rem
+			font-size: 4rem
+			letter-spacing: 0
+		&-area
+			margin-top: 5rem
+			font-size: 4rem
+			letter-spacing: 0
+		&-btn-send
+			font-size: 4rem
+			&:hover
+@media (min-width: 767.98px) and (max-width: 991.98px)
+	.contact
+		&-icon
+			& i
+			&-subtitle
+				margin-bottom: 5rem
+		&-input
+			letter-spacing: 0
+			font-size: 3rem
+		&-area
+			font-size: 3rem
+			letter-spacing: 0
+			margin-top: 4rem
+@media (min-width: 991.98px)
+	.contact-input
+		margin: 4rem 0
+
+.contact .section-title, .contact .section-subtitle
+	color: #fff
+.footer
+	&-content
+		height: 100%
+		font-size: 2rem
+		padding: 1rem
+		font-weight: 600
+.test
+	background: #fff
+	border: 1px solid red
+
